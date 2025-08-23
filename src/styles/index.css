@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ben10-dark text-white;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(0, 255, 0, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(139, 0, 255, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 20%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
+  }
+}
+
+@layer components {
+  .ben10-card {
+    @apply bg-gradient-to-br from-gray-900 to-gray-800 border border-ben10-green/20 rounded-xl p-6 shadow-2xl;
+    background-image: 
+      linear-gradient(135deg, rgba(0, 255, 0, 0.05) 0%, transparent 50%),
+      linear-gradient(225deg, rgba(139, 0, 255, 0.03) 0%, transparent 50%);
+  }
+
+  .omnitrix-button {
+    @apply relative px-6 py-3 font-orbitron font-bold text-black bg-ben10-green rounded-lg overflow-hidden transition-all duration-300;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  }
+
+  .omnitrix-button:hover {
+    @apply scale-105;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+  }
+
+  .skill-node {
+    @apply relative w-20 h-20 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, transparent 70%);
+    border: 2px solid rgba(0, 255, 0, 0.3);
+  }
+
+  .skill-node.unlocked {
+    @apply border-ben10-green;
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.4) 0%, rgba(0, 255, 0, 0.1) 70%);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  }
+
+  .skill-node.locked {
+    @apply opacity-50;
+    filter: grayscale(0.5);
+  }
+
+  .progress-bar {
+    @apply relative h-6 bg-gray-800 rounded-full overflow-hidden;
+  }
+
+  .progress-fill {
+    @apply h-full bg-gradient-to-r from-ben10-green to-alien-blue transition-all duration-500;
+    box-shadow: 0 0 10px currentColor;
+  }
+
+  .achievement-badge {
+    @apply relative p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg border-2 transition-all duration-300;
+  }
+
+  .achievement-badge.earned {
+    @apply border-alien-yellow;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+  }
+
+  .roadmap-node {
+    @apply relative p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-sm rounded-xl border transition-all duration-300;
+  }
+
+  .roadmap-node.active {
+    @apply border-ben10-green;
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+  }
+
+  .roadmap-node.completed {
+    @apply border-alien-yellow bg-gradient-to-br from-green-900/20 to-gray-800/90;
+  }
+
+  .alien-transform {
+    animation: alienTransform 0.5s ease-in-out;
+  }
+
+  @keyframes alienTransform {
+    0% {
+      transform: scale(1) rotate(0deg);
+      filter: brightness(1);
+    }
+    50% {
+      transform: scale(1.2) rotate(180deg);
+      filter: brightness(2) hue-rotate(90deg);
+    }
+    100% {
+      transform: scale(1) rotate(360deg);
+      filter: brightness(1);
+    }
+  }
+
+  .omnitrix-dial {
+    @apply relative w-32 h-32 rounded-full bg-gradient-to-br from-gray-800 to-black border-4 border-ben10-green;
+    box-shadow: 
+      inset 0 0 20px rgba(0, 255, 0, 0.3),
+      0 0 30px rgba(0, 255, 0, 0.5);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-ben10-green/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-ben10-green/70;
+}
