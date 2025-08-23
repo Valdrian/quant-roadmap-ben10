@@ -9,7 +9,7 @@ A gamified learning platform designed to help BSc Mathematics students become to
 
 ## 🎮 Live Demo
 
-[Try the Application Here](https://quant-roadmap-ben10.vercel.app) *(Deploy to your preferred hosting)*
+[Try the Application Here](https://1-2n2nvfquj-algoguy09s-projects.vercel.app/) *(Deploy to your preferred hosting)*
 
 ## ✨ Features
 
