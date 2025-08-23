@@ -62,7 +62,7 @@ A gamified learning platform designed to help BSc Mathematics students become to
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/quant-roadmap-ben10.git
+git clone https://github.com/ALGOGUY09/quant-roadmap-ben10.git
 cd quant-roadmap-ben10
 ```
 
@@ -192,10 +192,10 @@ For questions or suggestions, please open an issue on GitHub.
 ## 🚀 Quick Deploy
 
 ### Deploy to Vercel
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/quant-roadmap-ben10)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ALGOGUY09/quant-roadmap-ben10)
 
 ### Deploy to Netlify
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/quant-roadmap-ben10)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ALGOGUY09/quant-roadmap-ben10)
 
 ## 📊 Project Statistics
 
